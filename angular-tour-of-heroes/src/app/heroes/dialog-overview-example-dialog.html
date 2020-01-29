@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<form [formGroup]="myFormDialog"  >
+      <h1 mat-dialog-title>Your hero is {{data.name}}</h1>
+
+        <div mat-dialog-content>
+          <mat-form-field>
+            <input  matInput [(ngModel)]="data.name" placeholder="What's name your hero?" formControlName="heroName">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput [(ngModel)]="data.level" placeholder="Select level your hero" formControlName="heroLevel">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput [(ngModel)]="data.age" placeholder="Select age your hero" formControlName="heroAge">
+          </mat-form-field>
+          <p>Select class for your hero</p>
+             <mat-form-field>
+               <mat-select [(ngModel)]="data.cls"  formControlName="heroCls">
+                 <mat-option *ngFor="let cls of clsList" [value]="cls" >{{ cls }}</mat-option>
+               </mat-select>
+             </mat-form-field>
+
+             <mat-form-field>
+               <input matInput [(ngModel)]="data.power" placeholder="Select power your hero" formControlName="heroPower" >
+             </mat-form-field>
+           </div>
+           <div mat-dialog-actions>
+             <button mat-button (click)="onNoClick()">No Thanks</button>
+             <button mat-button [mat-dialog-close]="data" [disabled]="!myFormDialog.valid"
+                      >Ok</button>
+           </div>
+  <div class="alert alert-danger"
+       *ngIf="myFormDialog.controls['heroName'].invalid && myFormDialog.controls['heroName'].touched
+         || myFormDialog.controls['heroLevel'].invalid && myFormDialog.controls['heroLevel'].touched
+         || myFormDialog.controls['heroAge'].invalid && myFormDialog.controls['heroAge'].touched
+         || myFormDialog.controls['heroCls'].invalid && myFormDialog.controls['heroCls'].touched
+         || myFormDialog.controls['heroPower'].invalid && myFormDialog.controls['heroPower'].touched">
+    <p>Проверьте введенные данные</p>
+  </div>
+
+</form>
+</body>
+</html>

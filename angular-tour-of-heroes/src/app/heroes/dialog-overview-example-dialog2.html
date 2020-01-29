@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<form [formGroup]="myFormDialog2" novalidate>
+  <h1 mat-dialog-title>Your hero is {{data.name | uppercase}}</h1>
+  <div mat-dialog-content>
+    <mat-form-field>
+      <input  matInput [(ngModel)]="data.name" placeholder="What's name your hero?" formControlName="heroName" >
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="data.level" placeholder="Select level your hero" formControlName="heroLevel">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [(ngModel)]="data.age" placeholder="Select age your hero" formControlName="heroAge">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select [(ngModel)]="data.cls" placeholder="Select class for your hero" formControlName="heroCls">
+        <mat-option *ngFor="let cls of clsList" [value]="cls" >{{ cls }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field >
+      <input  matInput [(ngModel)]="data.power" placeholder="Select power your hero" formControlName="heroPower">
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-raised-button color="primary" (click)="onNoClick()" tabindex="-1"><mat-icon>arrow_back</mat-icon></button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="data" (click)="stopEdit()" [disabled]="!myFormDialog2.valid">
+      <mat-icon>save_alt</mat-icon></button>
+  </div>
+  <!--<div>
+    {{myFormDialog2.value | json}}
+  </div>-->
+  <div
+       *ngIf="myFormDialog2.controls['heroName'].invalid && myFormDialog2.controls['heroName'].touched
+         || myFormDialog2.controls['heroLevel'].invalid && myFormDialog2.controls['heroLevel'].touched
+         || myFormDialog2.controls['heroAge'].invalid && myFormDialog2.controls['heroAge'].touched
+         || myFormDialog2.controls['heroCls'].invalid && myFormDialog2.controls['heroCls'].touched
+         || myFormDialog2.controls['heroPower'].invalid && myFormDialog2.controls['heroPower'].touched">
+    <p>Проверьте введенные данные</p>
+  </div>
+</form>
+</body>
+</html>

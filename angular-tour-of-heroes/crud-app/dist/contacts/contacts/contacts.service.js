@@ -20,25 +20,31 @@ let ContactsService = class ContactsService {
         this.TOHModel = TOHModel;
     }
     async getHeroes() {
-        const heroes = this.TOHModel.find().exec();
+        const heroes = await this.TOHModel.find().exec();
         return heroes;
     }
-    async getHero(id) {
-        const heroes = await this.TOHModel.findById(id).exec();
-        return heroes;
+    async getHero(_id) {
+        if (_id.match(/^[0-9a-fA-F]{24}$/)) {
+            const heroes = await this.TOHModel.findById(_id).exec();
+            return heroes;
+        }
     }
     async addHero(createHeroDTO) {
-        const newHero = new this.TOHModel(createHeroDTO);
+        const newHero = await new this.TOHModel(createHeroDTO);
         return newHero.save();
     }
-    async updateHero(id, createHeroDTO) {
-        const updatedHero = await this.TOHModel
-            .findByIdAndUpdate(id, createHeroDTO, { new: true });
-        return updatedHero;
+    async updateHero(_id, createHeroDTO) {
+        if (_id.match(/^[0-9a-fA-F]{24}$/)) {
+            const updatedHero = await this.TOHModel
+                .findByIdAndUpdate(_id, createHeroDTO, { new: true });
+            return updatedHero;
+        }
     }
-    async deleteHero(id) {
-        const deleteHero = await this.TOHModel.findByIdAndRemove(id);
-        return deleteHero;
+    async deleteHero(_id) {
+        if (_id.match(/^[0-9a-fA-F]{24}$/)) {
+            const deleteHero = await this.TOHModel.findByIdAndRemove(_id);
+            return deleteHero;
+        }
     }
 };
 ContactsService = __decorate([

@@ -2198,7 +2198,7 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
       "../src/contacts/contact.entity.ts": {
-        "version": "a8fbdda7156118a41f208825624ed3be2494a5c3de771a03053ba5e84a3e0522",
+        "version": "db5d1f4bdd31752a4c754a14654a65294c79b33fdbabec22f24a880da0b31ada",
         "signature": "ce2e609e32cc67e0aafb4effdaa9e3f3a5d8d2f625e7eb5289925bca8e3692e0"
       },
       "../src/contacts/contacts/interfaces/hero.interface.ts": {
@@ -2210,12 +2210,12 @@
         "signature": "21142c242362fa3e815e87cbfa128d3ca386aa6d0ecb9d01c730a462ad23231d"
       },
       "../src/contacts/contacts/contacts.service.ts": {
-        "version": "1fbef189ea5fe221a1e322a78a436bd84a1224eefbd46e4665b6a1192aca5f83",
-        "signature": "a8f0b4e1b8ba13b3c8b99d66d892c9ba8096692c57fb8c5cda35674ae91abc6c"
+        "version": "8c9338f3020ebd2c7bab6108df2ececd449faefb543bb9ecbf7c9cac0466caa9",
+        "signature": "016c2818cd28b20e56e45541cdd638701b6c4c30b9adbc999e72c43522997bca"
       },
       "../src/contacts/contacts/contacts.controller.ts": {
-        "version": "7df9fd0e57e84ace6e98f0c02e5ecb0a8c768a7624a0266bb05a2b83a2eeca4e",
-        "signature": "9bfd8515f1386d1be5d7645684274750c2e556ff2a578077355ed839026301c8"
+        "version": "c0327ef4625c030e252d4080c7f3670ae5fb20e9881e9db2916de70f16fc1e00",
+        "signature": "0a836b81e97531e4f070f4c3dd526d5bf52db5c377b948281750f7ec65be7e8e"
       },
       "../src/contacts/contacts.module.ts": {
         "version": "44d53a619fcf3e37c7a2556c5c4d77df95f94831c92204b593cd8c8846b946cc",
@@ -2394,7 +2394,7 @@
         "signature": "1526c4260fa14e247f2abfcf26d76fd0c1e3d01ee69007424073c9da4f526b33"
       },
       "../src/main.ts": {
-        "version": "1b9dfc3bf4e47ea98d6edbe565ade38c954f8cc90b737ea08471922fc2d85563",
+        "version": "43c868ebeaa7694883cf2267d5f374d171d7d17cc8ca36eef2aacab18eda9931",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "../node_modules/@types/color-name/index.d.ts": {

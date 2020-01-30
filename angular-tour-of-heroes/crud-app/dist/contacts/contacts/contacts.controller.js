@@ -23,8 +23,8 @@ let ContactsController = class ContactsController {
         const heroes = await this.heroService.getHeroes();
         return heroes;
     }
-    async getHero(res, id) {
-        const hero = await this.heroService.getHero(id);
+    async getHero(res, _id) {
+        const hero = await this.heroService.getHero(_id);
         if (!hero)
             throw new common_1.NotFoundException('Customer does not exist!');
         return res.status(common_1.HttpStatus.OK).json(hero);
@@ -36,8 +36,8 @@ let ContactsController = class ContactsController {
             hero
         });
     }
-    async updateHero(res, id, createCustomerDTO) {
-        const hero = await this.heroService.updateHero(id, createCustomerDTO);
+    async updateHero(res, _id, createCustomerDTO) {
+        const hero = await this.heroService.updateHero(_id, createCustomerDTO);
         if (!hero)
             throw new common_1.NotFoundException('Customer does not exist!');
         return res.status(common_1.HttpStatus.OK).json({
@@ -45,8 +45,8 @@ let ContactsController = class ContactsController {
             hero
         });
     }
-    async deleteHero(res, id) {
-        const hero = await this.heroService.deleteHero(id);
+    async deleteHero(res, _id) {
+        const hero = await this.heroService.deleteHero(_id);
         if (!hero)
             throw new common_1.NotFoundException('Customer does not exist');
         return res.status(common_1.HttpStatus.OK).json({
@@ -56,15 +56,15 @@ let ContactsController = class ContactsController {
     }
 };
 __decorate([
-    common_1.Get('/api/getUser'),
+    common_1.Get('api/getUser'),
     __param(0, common_1.Res()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], ContactsController.prototype, "getHeroes", null);
 __decorate([
-    common_1.Get('/api/getUser/:id'),
-    __param(0, common_1.Res()), __param(1, common_1.Param('id')),
+    common_1.Get('api/getUser/:_id'),
+    __param(0, common_1.Res()), __param(1, common_1.Param('_id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
@@ -78,14 +78,14 @@ __decorate([
 ], ContactsController.prototype, "addHero", null);
 __decorate([
     common_1.Put('/api/updateUser'),
-    __param(0, common_1.Res()), __param(1, common_1.Query('id')), __param(2, common_1.Body()),
+    __param(0, common_1.Res()), __param(1, common_1.Query('_id')), __param(2, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object, create_hero_dto_1.CreateHeroDTO]),
     __metadata("design:returntype", Promise)
 ], ContactsController.prototype, "updateHero", null);
 __decorate([
     common_1.Delete('/api/deleteUser'),
-    __param(0, common_1.Res()), __param(1, common_1.Query('id')),
+    __param(0, common_1.Res()), __param(1, common_1.Query('_id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)

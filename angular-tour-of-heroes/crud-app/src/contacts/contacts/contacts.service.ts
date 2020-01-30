@@ -31,34 +31,42 @@ export class ContactsService {
 
   // fetch all customers
   async getHeroes(): Promise<allHeroes[]> {
-    const heroes = //await
+    const heroes = await
       this.TOHModel.find().exec();
     return heroes;
   }
 
   // Get a single customer
-  async getHero(id): Promise<allHeroes> {
-    const heroes = await this.TOHModel.findById(id).exec();
-    return heroes;
+  async getHero(_id): Promise<allHeroes> {
+    if (_id.match(/^[0-9a-fA-F]{24}$/)) {
+      // Yes, it's a valid ObjectId, proceed with `findById` call.
+      const heroes = await this.TOHModel.findById(_id).exec();
+      return heroes;
+    }
+
   }
 
   // post a single customer
   async addHero(createHeroDTO: CreateHeroDTO): Promise<allHeroes> {
-    const newHero = //await
+    const newHero = await
       new this.TOHModel(createHeroDTO);
     return newHero.save();
   }
 
   // Edit customer details
-  async updateHero(id, createHeroDTO: CreateHeroDTO): Promise<allHeroes> {
-    const updatedHero = await this.TOHModel
-      .findByIdAndUpdate(id, createHeroDTO, { new: true });
-    return updatedHero;
+  async updateHero(_id, createHeroDTO: CreateHeroDTO): Promise<allHeroes> {
+    if (_id.match(/^[0-9a-fA-F]{24}$/)) {
+      const updatedHero = await this.TOHModel
+        .findByIdAndUpdate(_id, createHeroDTO, {new: true});
+      return updatedHero;
+    }
   }
 
   // Delete a customer
-  async deleteHero(id): Promise<allHeroes> {
-    const deleteHero = await this.TOHModel.findByIdAndRemove(id);
-    return deleteHero;
+  async deleteHero(_id): Promise<any> {
+    if (_id.match(/^[0-9a-fA-F]{24}$/)) {
+      const deleteHero = await this.TOHModel.findByIdAndRemove(_id);
+      return deleteHero;
+    }
   }
 }

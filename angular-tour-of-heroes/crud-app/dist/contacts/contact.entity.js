@@ -7,5 +7,5 @@ exports.TOHSchema = new mongoose.Schema({
     age: Number,
     cls: String,
     power: Number,
-});
+}, { versionKey: false });
 //# sourceMappingURL=contact.entity.js.map

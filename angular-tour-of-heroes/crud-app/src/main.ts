@@ -6,12 +6,12 @@ import {
 } from '@nestjs/platform-fastify';
 
 async function bootstrap() {
-  //const app = await NestFactory.create(AppModule);
-  const app = await NestFactory.create<NestFastifyApplication>(
+  const app = await NestFactory.create(AppModule);
+  /*const app = await NestFactory.create<NestFastifyApplication>(
     AppModule,
     new FastifyAdapter(),
-  );
+  );*/
   app.enableCors();
-  await app.listen(3000);
+  await app.listen(8080);
 }
 bootstrap();

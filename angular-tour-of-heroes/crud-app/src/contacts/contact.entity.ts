@@ -6,4 +6,4 @@ export const TOHSchema = new mongoose.Schema({
   age: Number,
   cls: String,
   power:Number,
-});
+},{ versionKey: false });

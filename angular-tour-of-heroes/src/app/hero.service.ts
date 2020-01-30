@@ -15,12 +15,12 @@ const httpOptions = {
 export class HeroService {
 
   //private heroesUrl = 'api/heroes/';  // URL to web api
-  private heroesDeleteUrl = 'http://localhost:8080/api/deleteUser/';
-  private heroesGetUrl = 'http://localhost:8080/api/getUser/';
-  private heroesGetUrlFor = 'http://localhost:8080/getUser/';
+  private heroesDeleteUrl = 'http://localhost:8080/contacts/api/deleteUser/';
+  private heroesGetUrl = 'http://localhost:8080/contacts/api/getUser/';
+  private heroesGetUrlFor = 'http://localhost:8080/contacts/api/getUser/';
   //private heroesUpdateUrl = 'api/updateUser';
-  private heroesUpdateUrl = 'http://localhost:8080/api/updateUser/';
-  private heroesSaveUrl = 'http://localhost:8080/api/SaveUser/';
+  private heroesUpdateUrl = 'http://localhost:8080/contacts/api/updateUser/';
+  private heroesSaveUrl = 'http://localhost:8080/contacts/api/SaveUser/';
   constructor(
     @Inject(Http)
     private http: Http,
@@ -82,7 +82,7 @@ export class HeroService {
   addHero (hero: Hero): Observable<Hero> {
     return this.http.post<Hero>(this.heroesSaveUrl, hero, httpOptions)
       .pipe(
-      map((response: Response) =>(response.json().mod)),
+      map((response: Response) =>(response.json())),
        // map((hero: Hero) => (hero.id = hero._id)),
       tap((newHero: Hero) => this.log(`added hero w/ id=${newHero._id}`)),
       catchError(this.handleError<Hero>('addHero'))

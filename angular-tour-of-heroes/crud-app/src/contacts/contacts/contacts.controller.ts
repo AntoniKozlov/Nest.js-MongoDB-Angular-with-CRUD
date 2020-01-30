@@ -42,16 +42,16 @@ export class ContactsController {
 
 
   // Retrieve customers list
-  @Get('/api/getUser')
+  @Get('api/getUser')
   async getHeroes(@Res() res) {
     const heroes = await this.heroService.getHeroes();
     return heroes;//res.status(HttpStatus.OK).json(heroes);
   }
 
   // Fetch a particular customer using ID
-  @Get('/api/getUser/:id')
-  async getHero(@Res() res, @Param('id') id) {
-    const hero = await this.heroService.getHero(id);
+  @Get('api/getUser/:_id')
+  async getHero(@Res() res, @Param('_id') _id) {
+    const hero = await this.heroService.getHero(_id);
     if (!hero) throw new NotFoundException('Customer does not exist!');
     return res.status(HttpStatus.OK).json(hero);
 
@@ -69,8 +69,8 @@ export class ContactsController {
 
   // Update a customer's details
   @Put('/api/updateUser')
-  async updateHero(@Res() res, @Query('id') id, @Body() createCustomerDTO: CreateHeroDTO) {
-    const hero = await this.heroService.updateHero(id, createCustomerDTO);
+  async updateHero(@Res() res, @Query('_id') _id, @Body() createCustomerDTO: CreateHeroDTO) {
+    const hero = await this.heroService.updateHero(_id, createCustomerDTO);
     if (!hero) throw new NotFoundException('Customer does not exist!');
     return res.status(HttpStatus.OK).json({
       message: 'Customer has been successfully updated',
@@ -80,8 +80,8 @@ export class ContactsController {
 
   // Delete a customer
   @Delete('/api/deleteUser')
-  async deleteHero(@Res() res, @Query('id') id) {
-    const hero = await this.heroService.deleteHero(id);
+  async deleteHero(@Res() res, @Query('_id') _id) {
+    const hero = await this.heroService.deleteHero(_id);
     if (!hero) throw new NotFoundException('Customer does not exist');
     return res.status(HttpStatus.OK).json({
       message: 'Customer has been deleted',

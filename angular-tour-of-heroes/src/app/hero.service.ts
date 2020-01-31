@@ -15,12 +15,12 @@ const httpOptions = {
 export class HeroService {
 
   //private heroesUrl = 'api/heroes/';  // URL to web api
-  private heroesDeleteUrl = 'http://localhost:8080/contacts/api/deleteUser/';
-  private heroesGetUrl = 'http://localhost:8080/contacts/api/getUser/';
-  private heroesGetUrlFor = 'http://localhost:8080/contacts/api/getUser/';
+  private heroesDeleteUrl = 'http://localhost:8080/heroes/api/deleteUser/';
+  private heroesGetUrl = 'http://localhost:8080/heroes/api/getUser/';
+  //private heroesGetUrlFor = 'http://localhost:8080/heroes/api/getUser/';
   //private heroesUpdateUrl = 'api/updateUser';
-  private heroesUpdateUrl = 'http://localhost:8080/contacts/api/updateUser/';
-  private heroesSaveUrl = 'http://localhost:8080/contacts/api/SaveUser/';
+  private heroesUpdateUrl = 'http://localhost:8080/heroes/api/updateUser/';
+  private heroesSaveUrl = 'http://localhost:8080/heroes/api/SaveUser/';
   constructor(
     @Inject(Http)
     private http: Http,

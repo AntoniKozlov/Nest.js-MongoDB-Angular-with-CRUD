@@ -2197,32 +2197,32 @@
         "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
-      "../src/contacts/contact.entity.ts": {
+      "../src/contacts/hero.entity.ts": {
         "version": "db5d1f4bdd31752a4c754a14654a65294c79b33fdbabec22f24a880da0b31ada",
         "signature": "ce2e609e32cc67e0aafb4effdaa9e3f3a5d8d2f625e7eb5289925bca8e3692e0"
       },
-      "../src/contacts/contacts/interfaces/hero.interface.ts": {
+      "../src/contacts/interfaces/hero.interface.ts": {
         "version": "2e1ed10ab9bca5298abe8491fdb8cb220efdb117373c73594a595895727fe107",
         "signature": "8df7f9feecf7d781a3f4206e335fb15126eaf02f96691a393d710c9add7111aa"
       },
-      "../src/contacts/contacts/dto/create-hero.dto.ts": {
+      "../src/contacts/dto/create-hero.dto.ts": {
         "version": "b7730921f02f6b6b0a2c8356cefee0622b290bb3a569f083fc0ee4bb798c5416",
         "signature": "21142c242362fa3e815e87cbfa128d3ca386aa6d0ecb9d01c730a462ad23231d"
       },
-      "../src/contacts/contacts/contacts.service.ts": {
-        "version": "15603fd27decfbc010827ad3dc720153468838e216cb751a7cc114424224b35b",
-        "signature": "1d5c7fc9c50a50899169780d3abe77df29c0bd1deb81cfcabf02ab698e73a2e3"
+      "../src/contacts/heroes.service.ts": {
+        "version": "78bdda2bdb3da38b1ed9229c54199ff5560c861c264a407f980b93942c6295d6",
+        "signature": "6bfc35dec5c71d060c05ac555a55f004fc722544933bf9f4fcff00369845f9b0"
       },
-      "../src/contacts/contacts/contacts.controller.ts": {
-        "version": "a6e1f9dfc8292b8bb4993f154d5103b45d07ecb7b9897184c4be38284c988154",
-        "signature": "e031b3f976f4c6f02e900db2f0b2fa1ac3cb9592d083551ae431b04df555aa73"
+      "../src/contacts/heroes.controller.ts": {
+        "version": "b4d0afae537d8d85e7debf2839a224e78afb63a63661f5b7a8abafb5f04ff83d",
+        "signature": "650254408b46ec519f05c074d902a59a4a3b755a079a62e6565c3ffa41bb63d9"
       },
-      "../src/contacts/contacts.module.ts": {
-        "version": "44d53a619fcf3e37c7a2556c5c4d77df95f94831c92204b593cd8c8846b946cc",
-        "signature": "aac436878a9c068e3df1193952ed08f43805c2aad5ec3e08daeb9658a99e3a76"
+      "../src/contacts/heroes.module.ts": {
+        "version": "8a5be9aaef3aef2419e71e19b3015d377dd612dfb9777ac2f4024ecad85790e8",
+        "signature": "b6c5b82049d012fbd2058270e92efff6eb9f060d4d9becd09edfe756d3c1266b"
       },
       "../src/app.module.ts": {
-        "version": "fbeba206fd5e5a69e4d13d3371f5b0c016e071a0fc11fd5ffed7b48ea81e1d94",
+        "version": "0f29846bf8b00cea4f51c6817e523015122ecaf324dfdc61b3ba70be0e9a9440",
         "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88"
       },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -7065,56 +7065,56 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.5/util.d.ts"
       ],
-      "../src/contacts/contact.entity.ts": [
+      "../src/contacts/hero.entity.ts": [
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.5/util.d.ts"
       ],
-      "../src/contacts/contacts/interfaces/hero.interface.ts": [
+      "../src/contacts/interfaces/hero.interface.ts": [
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.5/util.d.ts"
       ],
-      "../src/contacts/contacts/dto/create-hero.dto.ts": [
+      "../src/contacts/dto/create-hero.dto.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.5/util.d.ts"
       ],
-      "../src/contacts/contacts/contacts.service.ts": [
+      "../src/contacts/heroes.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/@nestjs/mongoose/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
-        "../src/contacts/contact.entity.ts",
-        "../src/contacts/contacts/interfaces/hero.interface.ts",
-        "../src/contacts/contacts/dto/create-hero.dto.ts",
+        "../src/contacts/hero.entity.ts",
+        "../src/contacts/interfaces/hero.interface.ts",
+        "../src/contacts/dto/create-hero.dto.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.5/util.d.ts"
       ],
-      "../src/contacts/contacts/contacts.controller.ts": [
+      "../src/contacts/heroes.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/contacts/contacts/contacts.service.ts",
-        "../src/contacts/contacts/dto/create-hero.dto.ts",
-        "../src/contacts/contacts/interfaces/hero.interface.ts",
+        "../src/contacts/heroes.service.ts",
+        "../src/contacts/dto/create-hero.dto.ts",
+        "../src/contacts/interfaces/hero.interface.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.5/util.d.ts"
       ],
-      "../src/contacts/contacts.module.ts": [
+      "../src/contacts/heroes.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/contacts/contacts/contacts.service.ts",
-        "../src/contacts/contacts/contacts.controller.ts",
+        "../src/contacts/heroes.service.ts",
+        "../src/contacts/heroes.controller.ts",
         "../node_modules/@nestjs/mongoose/index.d.ts",
-        "../src/contacts/contact.entity.ts",
+        "../src/contacts/hero.entity.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7124,9 +7124,9 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/app.controller.ts",
         "../src/app.service.ts",
-        "../src/contacts/contacts.module.ts",
+        "../src/contacts/heroes.module.ts",
         "../node_modules/@nestjs/mongoose/index.d.ts",
-        "../src/contacts/contact.entity.ts",
+        "../src/contacts/hero.entity.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -11161,19 +11161,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.5/util.d.ts"
       ],
-      "../src/contacts/contact.entity.ts": [
-        "../node_modules/@types/mongoose/index.d.ts"
-      ],
-      "../src/contacts/contacts/contacts.service.ts": [
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../src/contacts/contacts/interfaces/hero.interface.ts",
-        "../src/contacts/contacts/dto/create-hero.dto.ts"
-      ],
-      "../src/contacts/contacts/contacts.controller.ts": [
-        "../src/contacts/contacts/contacts.service.ts",
-        "../src/contacts/contacts/dto/create-hero.dto.ts",
-        "../src/contacts/contacts/interfaces/hero.interface.ts"
-      ],
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/common/interfaces/index.d.ts",
@@ -11449,6 +11436,22 @@
         "../../node_modules/@types/node/index.d.ts",
         "../../node_modules/@types/webpack-sources/node_modules/source-map/source-map.d.ts",
         "../../node_modules/@types/source-list-map/index.d.ts"
+      ],
+      "../src/contacts/hero.entity.ts": [
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
+      "../src/contacts/heroes.service.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/contacts/interfaces/hero.interface.ts",
+        "../src/contacts/dto/create-hero.dto.ts"
+      ],
+      "../src/contacts/heroes.controller.ts": [
+        "../src/contacts/heroes.service.ts",
+        "../src/contacts/dto/create-hero.dto.ts",
+        "../src/contacts/interfaces/hero.interface.ts"
+      ],
+      "../src/contacts/interfaces/hero.interface.ts": [
+        "../node_modules/@types/mongoose/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": []

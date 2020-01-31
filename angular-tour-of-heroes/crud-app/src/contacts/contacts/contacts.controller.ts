@@ -12,35 +12,35 @@ export class ContactsController {
   index(): string {
     return "This action will return contacts";
   }*/
-  /*
-  @Post()
+
+  @Post('/api/SaveUser')
   async addHero(@Body() createCustomerDTO: CreateHeroDTO) {
     return this.heroService.addHero(createCustomerDTO);
   }
 
-  @Get()
-  async getAllHero(): Promise<allHeroes[]> {
-    return this.heroService.getAllHero();
+  @Get('api/getUser')
+  async getHeroes(): Promise<allHeroes[]> {
+    return this.heroService.getHeroes();
   }
 
-  @Get(':id')
+  @Get('api/getUser/:id')
   async getHero(@Param('id') id: string) {
     return this.heroService.getHero(id);
   }
 
-  @Put(':id')
+  @Put('/api/updateUser/:id')
   async updateHero(@Param('id') id: string, @Body() createCustomerDTO: CreateHeroDTO) {
     return this.heroService.updateHero(id, createCustomerDTO);
   }
 
-  @Delete(':id')
+  @Delete('/api/deleteUser/:id')
   async deleteHero(@Param('id') id: string, @Body() createCustomerDTO: CreateHeroDTO) {
     return this.heroService.deleteHero(id, createCustomerDTO);
   }
-*/
 
 
 
+/*
   // Retrieve customers list
   @Get('api/getUser')
   async getHeroes(@Res() res) {
@@ -87,7 +87,7 @@ export class ContactsController {
       message: 'Customer has been deleted',
       hero
     })
-  }
+  }*/
 
 
 }

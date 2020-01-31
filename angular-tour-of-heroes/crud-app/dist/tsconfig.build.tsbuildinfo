@@ -2210,12 +2210,12 @@
         "signature": "21142c242362fa3e815e87cbfa128d3ca386aa6d0ecb9d01c730a462ad23231d"
       },
       "../src/contacts/contacts/contacts.service.ts": {
-        "version": "8c9338f3020ebd2c7bab6108df2ececd449faefb543bb9ecbf7c9cac0466caa9",
-        "signature": "016c2818cd28b20e56e45541cdd638701b6c4c30b9adbc999e72c43522997bca"
+        "version": "15603fd27decfbc010827ad3dc720153468838e216cb751a7cc114424224b35b",
+        "signature": "1d5c7fc9c50a50899169780d3abe77df29c0bd1deb81cfcabf02ab698e73a2e3"
       },
       "../src/contacts/contacts/contacts.controller.ts": {
-        "version": "c0327ef4625c030e252d4080c7f3670ae5fb20e9881e9db2916de70f16fc1e00",
-        "signature": "0a836b81e97531e4f070f4c3dd526d5bf52db5c377b948281750f7ec65be7e8e"
+        "version": "a6e1f9dfc8292b8bb4993f154d5103b45d07ecb7b9897184c4be38284c988154",
+        "signature": "e031b3f976f4c6f02e900db2f0b2fa1ac3cb9592d083551ae431b04df555aa73"
       },
       "../src/contacts/contacts.module.ts": {
         "version": "44d53a619fcf3e37c7a2556c5c4d77df95f94831c92204b593cd8c8846b946cc",
@@ -11171,8 +11171,8 @@
       ],
       "../src/contacts/contacts/contacts.controller.ts": [
         "../src/contacts/contacts/contacts.service.ts",
-        "../src/contacts/contacts/interfaces/hero.interface.ts",
-        "../src/contacts/contacts/dto/create-hero.dto.ts"
+        "../src/contacts/contacts/dto/create-hero.dto.ts",
+        "../src/contacts/contacts/interfaces/hero.interface.ts"
       ],
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",

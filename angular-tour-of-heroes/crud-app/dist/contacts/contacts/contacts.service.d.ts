@@ -5,8 +5,8 @@ export declare class ContactsService {
     private readonly TOHModel;
     constructor(TOHModel: Model<allHeroes>);
     getHeroes(): Promise<allHeroes[]>;
-    getHero(_id: any): Promise<allHeroes>;
+    getHero(id: any): Promise<allHeroes>;
     addHero(createHeroDTO: CreateHeroDTO): Promise<allHeroes>;
-    updateHero(_id: any, createHeroDTO: CreateHeroDTO): Promise<allHeroes>;
-    deleteHero(_id: any): Promise<any>;
+    updateHero(id: any, createHeroDTO: CreateHeroDTO): Promise<allHeroes>;
+    deleteHero(id: any, createHeroDTO: CreateHeroDTO): Promise<allHeroes>;
 }
